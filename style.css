@@ -288,3 +288,60 @@ blockquote{font-size:18px!important;margin-top:18px!important}
 .slide[data-title="Ecossistema"] .device-card.rider .bag-go{
   color:#fff!important;
 }
+
+/* ===== FINAL APPROVAL FIXES: SLIDES 6, 9 AND 12 ===== */
+/* Slide 6: keep the entire route artwork visible inside the right panel */
+.slide[data-title="Roteirização"] .route-visual.fullmap{
+  background-size:contain!important;
+  background-repeat:no-repeat!important;
+  background-position:center center!important;
+  background-color:#f4f1ec!important;
+  margin:24px 34px 24px 18px!important;
+  border-radius:24px!important;
+  overflow:hidden!important;
+  box-shadow:0 16px 38px rgba(20,24,30,.08)!important;
+}
+.slide[data-title="Roteirização"] .route-visual.fullmap .badge{
+  right:20px!important;
+  bottom:20px!important;
+}
+
+/* Slide 9: show the full executive image without cropping its right edge */
+.slide[data-title="Modelo econômico"] .model-visual-panel .image-card.tall{
+  background-size:contain!important;
+  background-repeat:no-repeat!important;
+  background-position:center center!important;
+  background-color:#f4f1ec!important;
+  width:100%!important;
+  max-width:520px!important;
+  margin-right:18px!important;
+}
+.slide[data-title="Modelo econômico"] .model-visual-panel{
+  padding-right:14px!important;
+}
+
+/* Slide 12: larger, easier-to-read footer contacts */
+.slide.final .contact-bar{
+  min-height:92px!important;
+  gap:30px!important;
+  padding:18px 4.5vw!important;
+}
+.slide.final .contact-brand{
+  font-size:36px!important;
+  min-width:max-content!important;
+}
+.slide.final .contact-bar a{
+  font-size:16px!important;
+  font-weight:700!important;
+  line-height:1.28!important;
+  white-space:nowrap!important;
+}
+.slide.final .final-content{
+  padding-bottom:118px!important;
+}
+
+@media(max-width:1320px){
+  .slide.final .contact-bar{gap:18px!important;padding:14px 3vw!important;}
+  .slide.final .contact-bar a{font-size:13px!important;white-space:normal!important;}
+  .slide.final .contact-brand{font-size:31px!important;}
+}
