@@ -4,7 +4,7 @@ const progress = document.getElementById('progressBar');
 const counter = document.getElementById('counter');
 const dots = document.getElementById('dots');
 let current = 0;
-const pricingLink = ''; // inserir URL definitivo da Precificação Inteligente C7MOBI aqui
+const pricingLink = ''; // inserir URL definitivo da Precificação Inteligente C7MOVI aqui
 
 slides.forEach((_, i) => {
   const b = document.createElement('button');
